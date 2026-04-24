@@ -12,6 +12,14 @@ services:
   packages:
   - name: SIQA_GIT_2525Project
     version: "1.0"
+- serviceName: project.siqa_git_2525.integrations:AlertsCRTandERT
+  packages:
+  - name: SIQA_GIT_2525Project
+    version: "1.0"
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.834
 - serviceName: project.siqa_git_2525.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_GIT_2525Project
