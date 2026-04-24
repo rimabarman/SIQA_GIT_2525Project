@@ -8,6 +8,7 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: MJANGit
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -70,6 +71,20 @@ services:
   - name: WmPublic
     version: 12.1.0.0.834
 - serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.834
+- serviceName: project.siqa_git_2525.integrations:gvtest
+  packages:
+  - name: SIQA_GIT_2525Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: GB_1:readGlobalvariable
+  packages:
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+- serviceName: pub.globalVariable:getGlobalVariable
   packages:
   - name: WmPublic
     version: 12.1.0.0.834
