@@ -7,14 +7,23 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+- name: DADA_GlobalVariable1
+  gitServerName: MJANGit
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_2525.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDBConn
   packages:
   - name: SIQA_GIT_2525Project
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
 - serviceName: project.siqa_git_2525.integrations:AlertsCRTandERT
   packages:
   - name: SIQA_GIT_2525Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
 - serviceName: pub.alert:emit
   packages:
@@ -23,6 +32,8 @@ services:
 - serviceName: project.siqa_git_2525.integrations:Copy_Sum
   packages:
   - name: SIQA_GIT_2525Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
 - serviceName: pub.math:addInts
   packages:
@@ -36,13 +47,19 @@ services:
   packages:
   - name: SIQA_GIT_2525Project
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
 - serviceName: project.siqa_git_2525.integrations:Sum
   packages:
   - name: SIQA_GIT_2525Project
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
 - serviceName: project.siqa_git_2525.integrations:deepclonetest
   packages:
   - name: SIQA_GIT_2525Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
 - serviceName: pub.string:stringToBytes
   packages:
