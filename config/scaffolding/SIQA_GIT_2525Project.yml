@@ -16,6 +16,18 @@ services:
   packages:
   - name: SIQA_GIT_2525Project
     version: "1.0"
+- serviceName: project.siqa_git_2525.integrations:Sum
+  packages:
+  - name: SIQA_GIT_2525Project
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.834
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.834
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
